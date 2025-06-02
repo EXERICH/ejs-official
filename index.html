@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EJ's Ice Pops</title>
+    <link rel="icon" href="file:///C:/Users/emake/Downloads/ice_pop_favicon_16x16.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ's Ice Pops</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        header {
+            background-color: #FF5733;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #FF5733;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        table th, table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #FF5733;
+            color: white;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        #vote-result {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        #vote-stats {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #fun-fact {
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showSection('home')">Home</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('what-we-do')">What We Do</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('flavors')">Flavors</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('vote')">Vote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sections -->
+    <div id="home" class="section active">
+        <main>
+            <h1>EJ's Ice Pops</h1>
+            <p>Welcome to EJ's Ice Pops! We're passionate about making the best flavored ice cubes for you to enjoy.</p>
+            <p id="fun-fact"></p>
+    
+            <div style="margin-top: 25px;">
+                <h3 style="color: #FF5733;">📍 Find Us</h3>
+                <p>102 Egan Place, ON</p>
+            </div>
+    
+            <div style="margin-top: 15px;">
+                <h3 style="color: #FF5733;">📸 Follow Us</h3>
+                <p><a href="https://www.instagram.com/ejsicepops" target="_blank" style="color: #FF5733; text-decoration: none;">@ejsicepops on Instagram</a></p>
+            </div>
+    
+            <section id="testimonials" style="margin-top: 30px;">
+                <h2 style="color: #FF5733; margin-bottom: 15px;">What Our Customers Say</h2>
+                <div style="max-width: 700px; margin: 0 auto; text-align: left;">
+                    <blockquote style="background-color: #fff; padding: 15px; border-left: 5px solid #FF5733; margin-bottom: 15px;">
+                        <p>"EJ's Ice Pops are my favorite summer treat! So refreshing and flavorful!"</p>
+                        <cite>- Sarah, 12</cite>
+                    </blockquote>
+                    <blockquote style="background-color: #fff; padding: 15px; border-left: 5px solid #FF5733; margin-bottom: 15px;">
+                        <p>"The Blue Berry flavor is amazing, and it's only 50 cents! You can’t beat that!"</p>
+                        <cite>- Jake, 13</cite>
+                    </blockquote>
+                    <blockquote style="background-color: #fff; padding: 15px; border-left: 5px solid #FF5733;">
+                        <p>"I love supporting young entrepreneurs. Keep up the awesome work!"</p>
+                        <cite>- Mrs. Nguyen, Neighbor</cite>
+                    </blockquote>
+                </div>
+            </section>            
+        </main>
+    </div>
+    
+
+    <div id="what-we-do" class="section">
+        <main>
+            <h1>What We Do</h1>
+    
+            <section style="margin-top: 20px; text-align: left; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <h2 style="color: #FF5733;">1. Our Mission</h2>
+                <p>At EJ’s Ice Pops, our mission is simple: bring cool, tasty joy to your day with every flavorful ice cube we sell! We combine creativity, flavor, and fun in every frozen treat.</p>
+    
+                <h2 style="color: #FF5733; margin-top: 20px;">2. How We Got Started</h2>
+                <p>It all started as a summer project between friends, and quickly turned into a passion for making unique, affordable treats. With just an ice tray, some juice, and big ideas—we launched EJ’s Ice Pops!</p>
+    
+                <h2 style="color: #FF5733; margin-top: 20px;">3. Made with Love</h2>
+                <p>Each ice pop is made by hand, using delicious ingredients and a lot of care. We make sure every cube is packed with flavor and frozen to perfection.</p>
+    
+                <h2 style="color: #FF5733; margin-top: 20px;">4. Why We're Different</h2>
+                <ul style="padding-left: 20px;">
+                    <li>Pocket-friendly (just 50 cents!)</li>
+                    <li>Made by kids, for everyone</li>
+                    <li>Bursting with fun and surprising flavors</li>
+                </ul>
+    
+                <h2 style="color: #FF5733; margin-top: 20px;">5. Community & Summer Vibes</h2>
+                <p>We love bringing the neighborhood together! Whether it's at the park, school events, or on your porch—EJ’s Ice Pops are all about sharing smiles, one cube at a time.</p>
+            </section>
+        </main>
+    </div>
+    <div id="flavors" class="section">
+        <main>
+            <h1>Flavors</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Flavors</th>
+                        <th>Pricing</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Blue Berry</td>
+                        <td>50 cents</td>
+                    </tr>
+                    <tr>
+                        <td>Underway</td>
+                        <td>Undecided</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <div id="vote" class="section">
+        <main>
+            <h1>Vote for Our Next Flavor!</h1>
+            <form id="vote-form" onsubmit="submitVote(event)">
+                <label><input type="radio" name="flavor" value="Mango"> Mango</label><br>
+                <label><input type="radio" name="flavor" value="Grape"> Grape</label><br>
+                <label><input type="radio" name="flavor" value="Peach"> Peach</label><br><br>
+                <button type="submit">Vote</button>
+            </form>
+            <p id="vote-result"></p>
+            <div id="vote-stats">
+                <p id="mango-percent"></p>
+                <p id="grape-percent"></p>
+                <p id="peach-percent"></p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Script -->
+    <script>
+        // Initialize vote counts and user voting status in Local Storage if not set
+        if (!localStorage.getItem('voteCounts')) {
+            const initialCounts = {
+                Mango: 0,
+                Grape: 0,
+                Peach: 0,
+            };
+            localStorage.setItem('voteCounts', JSON.stringify(initialCounts));
+        }
+        if (!localStorage.getItem('hasVoted')) {
+            localStorage.setItem('hasVoted', 'false');
+        }
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            const activeSection = document.getElementById(sectionId);
+            if (activeSection) {
+                activeSection.classList.add('active');
+            }
+        }
+
+        function submitVote(event) {
+            event.preventDefault();
+
+            if (localStorage.getItem('hasVoted') === 'true') {
+                document.getElementById('vote-result').innerText = "You've already voted. Thank you for casting your vote!";
+                return;
+            }
+
+            const selected = document.querySelector('input[name="flavor"]:checked');
+            const result = document.getElementById('vote-result');
+            if (selected) {
+                const selectedFlavor = selected.value;
+                const voteCounts = JSON.parse(localStorage.getItem('voteCounts'));
+                voteCounts[selectedFlavor]++;
+                localStorage.setItem('voteCounts', JSON.stringify(voteCounts));
+                localStorage.setItem('hasVoted', 'true');
+                result.innerText = `Thanks for voting for ${selectedFlavor}! 🍧`;
+                updateVotePercentages(voteCounts);
+            } else {
+                result.innerText = "Please select a flavor before voting.";
+            }
+        }
+
+        function updateVotePercentages(voteCounts) {
+            const totalVotes = voteCounts.Mango + voteCounts.Grape + voteCounts.Peach;
+            if (totalVotes === 0) {
+                document.getElementById('mango-percent').innerText = "Mango: 0%";
+                document.getElementById('grape-percent').innerText = "Grape: 0%";
+                document.getElementById('peach-percent').innerText = "Peach: 0%";
+                return;
+            }
+
+            const mangoPercent = ((voteCounts.Mango / totalVotes) * 100).toFixed(2);
+            const grapePercent = ((voteCounts.Grape / totalVotes) * 100).toFixed(2);
+            const peachPercent = ((voteCounts.Peach / totalVotes) * 100).toFixed(2);
+
+            document.getElementById('mango-percent').innerText = `Mango: ${mangoPercent}%`;
+            document.getElementById('grape-percent').innerText = `Grape: ${grapePercent}%`;
+            document.getElementById('peach-percent').innerText = `Peach: ${peachPercent}%`;
+        }
+
+        const facts = [
+            "Did you know? Popsicles were invented by an 11-year-old!",
+            "Ice cubes can be made with juice for extra flavor!",
+            "EJ's Ice Pops are best enjoyed on hot summer days!",
+            "The first ice pop was accidentally frozen with a stir stick inside!"
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const fact = facts[Math.floor(Math.random() * facts.length)];
+            document.getElementById('fun-fact').innerText = fact;
+
+            const voteCounts = JSON.parse(localStorage.getItem('voteCounts'));
+            updateVotePercentages(voteCounts);
+        });
+    </script>
+</body>
+</html>
